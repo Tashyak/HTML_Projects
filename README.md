@@ -77,17 +77,17 @@ The purpose of this repository is to:
 Web-Projects/
 │── One_piece_project/
 │   ├── index.html
-│   ├── style.css
+│   └── style.css
 │  
 │
 │── Project-2/
 │   ├── index.html
-│   ├── style.css
+│   └── style.css
 │  
 │
 │── Project-3/
 │   ├── index.html
-│   ├── style.css
+│   └── style.css
 │  
 │
 └── README.md
