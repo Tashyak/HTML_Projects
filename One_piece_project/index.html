@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A premium One Piece anime showcase built with pure HTML and CSS." />
+  <title>One Piece | Grand Line Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="One Piece home">One Piece</a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav-burger" for="nav-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-panel">
+        <a href="#home">Home</a>
+        <a href="#lore">Lore</a>
+        <a href="#straw-hats">Straw Hats</a>
+        <a href="#devil-fruits">Devil Fruits</a>
+        <a href="#emperors">Emperors</a>
+        <a href="#watch">Watch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Grand Line Chronicles</p>
+        <h1>THE AGE OF PIRATES IS HERE</h1>
+        <p class="hero-copy">
+          Set sail with the Straw Hat crew, chase the One Piece, and cross the seas where legends are born.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#lore">Explore Grand Line</a>
+          <a class="secondary-btn" href="#straw-hats">Meet the Crew</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lore section" id="lore">
+      <div class="section-heading">
+        <p class="eyebrow">World Building</p>
+        <h2>The lore behind the voyage</h2>
+      </div>
+
+      <div class="lore-grid">
+        <article class="glass-card lore-card">
+          <p class="card-kicker">01</p>
+          <h3>The Great Pirate Era</h3>
+          <p>
+            Gold Roger’s final words ignited a global hunt for treasure, freedom, and infamy. Every sea now hums with
+            ambition.
+          </p>
+        </article>
+
+        <article class="glass-card lore-card">
+          <p class="card-kicker">02</p>
+          <h3>The Grand Line</h3>
+          <p>
+            A brutal route of impossible weather, strange islands, and dangerous alliances where only the bold survive
+            long enough to dream.
+          </p>
+        </article>
+
+        <article class="glass-card lore-card">
+          <p class="card-kicker">03</p>
+          <h3>The Celestial Dragons</h3>
+          <p>
+            A feared class of nobles whose power shadows the world, reminding every rebel why the seas still need
+            revolution.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="crew section" id="straw-hats">
+      <div class="section-heading">
+        <p class="eyebrow">Crew Showcase</p>
+        <h2>Straw Hat Pirates</h2>
+      </div>
+
+      <div class="crew-grid">
+        <article class="crew-card"
+          style="--accent: #ff2a5f; --poster:url('https://i.pinimg.com/control1/1200x/0d/98/b2/0d98b2916254548f2c79a57eb8768969.jpg')">
+          <div class="crew-copy">
+            <h3>Monkey D. Luffy</h3>
+            <p>Captain | Gomu Gomu Power | Straw Hat Founder</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>3,000,000,000</strong>
+            <small>Future Pirate King</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #00ff66; --poster:url('https://i.pinimg.com/control1/736x/79/e2/c9/79e2c9402014ead1eebf6c9f184c5bf8.jpg')">
+          <div class="crew-copy">
+            <h3>Roronoa Zoro</h3>
+            <p>Swordsman | Three-Sword Style | First Mate</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>1,111,000,000</strong>
+            <small>King of Hell</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #ff7700; --poster:url('https://i.pinimg.com/736x/de/b2/83/deb2833ee3dcc0c9ed8d7eb5574eeac7.jpg')">
+          <div class="crew-copy">
+            <h3>Nami</h3>
+            <p>Navigator | Weather Clima-Tact | Cartographer</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>366,000,000</strong>
+            <small>Cat Burglar</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #ffcc00; --poster:url('https://i.pinimg.com/736x/c3/71/21/c3712167467dfeb5bfb086f95f9ee2da.jpg')">
+          <div class="crew-copy">
+            <h3>Usopp</h3>
+            <p>Sniper | Pop Green Arsenal | Master Storyteller</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>500,000,000</strong>
+            <small>God Usopp</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #00bfff; --poster:url('https://i.pinimg.com/control1/1200x/75/aa/c7/75aac75973bfaefd1bdece6f1c10f410.jpg')">
+          <div class="crew-copy">
+            <h3>Sanji</h3>
+            <p>Cook | Black Leg Style | Ifrit Jambe</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>1,032,000,000</strong>
+            <small>Prince of Germa</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #ff66b2; --poster:url('https://i.pinimg.com/736x/4e/e4/1a/4ee41a73dc63cb9dbe7a14209a19e8fc.jpg')">
+          <div class="crew-copy">
+            <h3>Tony Tony Chopper</h3>
+            <p>Doctor | Rumble Ball Transformations | Reindeer</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>1,000</strong>
+            <small>Cotton Candy Lover</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #bd00ff; --pos: center 12%; --size: 112%; --poster:url('https://i.pinimg.com/736x/8c/4c/41/8c4c41f3e3d12c5d47944c942e78e432.jpg')">
+          <div class="crew-copy">
+            <h3>Nico Robin</h3>
+            <p>Archaeologist | Hana Hana Power | Historian</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>930,000,000</strong>
+            <small>Devil Child</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #00ffff; --pos: center 10%; --size: 135%; --poster:url('https://i.pinimg.com/736x/bf/6a/cd/bf6acd283b518e45255a3cf7fa15df5a.jpg')">
+          <div class="crew-copy">
+            <h3>Franky</h3>
+            <p>Shipwright | Cola-Powered Cyborg | General Franky</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>394,000,000</strong>
+            <small>Iron Man / Cyborg</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #ffffff; --poster:url('https://i.pinimg.com/736x/8e/3a/92/8e3a92987d8522843d68a106fd947cb1.jpg')">
+          <div class="crew-copy">
+            <h3>Brook</h3>
+            <p>Musician | Revive-Revive Power | Soul Sword</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>383,000,000</strong>
+            <small>Soul King</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #1e90ff; --pos: center 8%; --size: 105%; --poster:url('https://i.pinimg.com/736x/2c/d9/0b/2cd90bb04478a6b76ad833992d1bc5d5.jpg')">
+          <div class="crew-copy">
+            <h3>Jinbe</h3>
+            <p>Helmsman | Fish-Man Karate | Sun Pirates Legacy</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>1,100,000,000</strong>
+            <small>First Son of the Sea</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="fruits section" id="devil-fruits">
+      <div class="section-heading">
+        <p class="eyebrow">Encyclopedia</p>
+        <h2>Devil Fruits</h2>
+      </div>
+
+      <div class="fruit-list">
+        <details class="fruit-item">
+          <summary>
+            <span>Paramecia</span>
+            <strong>Reality-bending powers</strong>
+          </summary>
+          <div class="fruit-body">
+            <div class="fruit-body-content">
+              <p>
+                The most varied class, turning bodies, environments, and concepts into weapons, shields, and impossible
+                advantages.
+              </p>
+              <div class="crew-grid" style="margin-top: 1.5rem;">
+                <article class="crew-card"
+                  style="--accent: #6320b0; --poster:url('https://i.pinimg.com/736x/59/66/cf/5966cfa4166a72b6a3dac4d65f5d1330.jpg')">
+                  <div class="crew-copy">
+                    <h3>Gomu Gomu no Mi</h3>
+                    <p>Paramecia | Rubber Body | Gum-Gum Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>MONKEY D. LUFFY</strong>
+                    <small>Gear 5 / Sun God Nika</small>
+                  </div>
+                </article>
+
+                <article class="crew-card"
+                  style="--accent: #ff00ff; --poster:url('https://i.pinimg.com/736x/e4/40/84/e4408456e95edbd719a3e07bcf74c1aa.jpg')">
+                  <div class="crew-copy">
+                    <h3>Hana Hana no Mi</h3>
+                    <p>Paramecia | Limb Duplication | Flower-Flower Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>NICO ROBIN</strong>
+                    <small>Mil Fleur / Demonio Fleur</small>
+                  </div>
+                </article>
+
+                <article class="crew-card"
+                  style="--accent: #ff921e; --poster:url('https://i.pinimg.com/736x/51/63/c4/5163c478c6ad918270355472f964f9c4.jpg')">
+                  <div class="crew-copy">
+                    <h3>Yomi Yomi no Mi</h3>
+                    <p>Paramecia | Resurrection & Soul | Revive-Revive Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>BROOK</strong>
+                    <small>Soul King / Underworld Cold</small>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="fruit-item">
+          <summary>
+            <span>Zoan</span>
+            <strong>Animal transformation</strong>
+          </summary>
+          <div class="fruit-body">
+            <div class="fruit-body-content">
+              <p>
+                Zoan users gain forms that enhance strength, speed, and instinct, ranging from beasts to ancient and
+                mythical legends.
+              </p>
+              <div class="crew-grid" style="margin-top: 1.5rem;">
+                <article class="crew-card"
+                  style="--accent: #c33700; --poster:url('https://i.pinimg.com/736x/d9/70/e9/d970e9136dccf686787995110e401bb8.jpg ')">
+                  <div class="crew-copy">
+                    <h3>Hito Hito no Mi</h3>
+                    <p>Zoan | Human Transformation | Human-Human Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>TONY TONY CHOPPER</strong>
+                    <small>Rumble Ball / Monster Point</small>
+                  </div>
+                </article>
+
+                <article class="crew-card"
+                  style="--accent: #008cff; --poster:url('https://i.pinimg.com/736x/ec/b6/b3/ecb6b3eaf78f70aa186f7bccc1319fa6.jpg')">
+                  <div class="crew-copy">
+                    <h3>Uo Uo no Mi</h3>
+                    <p>Mythical Zoan | Azure Dragon | Fish-Fish Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>KAIDO</strong>
+                    <small>Governor-General of Beast Pirates</small>
+                  </div>
+                </article>
+
+                <article class="crew-card"
+                  style="--accent: #c8a207; --poster:url('https://i.pinimg.com/736x/1c/bb/a7/1cbba770fd8095b89ff0a5bc4f7b85eb.jpg')">
+                  <div class="crew-copy">
+                    <h3>Neko Neko no Mi</h3>
+                    <p>Ancient Zoan | Leopard Form | Cat-Cat Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>ROB LUCCI</strong>
+                    <small>CP0 Aegis / Awakened Form</small>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="fruit-item">
+          <summary>
+            <span>Logia</span>
+            <strong>Elemental intangibility</strong>
+          </summary>
+          <div class="fruit-body">
+            <div class="fruit-body-content">
+              <p>
+                The rarest and most feared class, letting users become and control natural elements while slipping
+                through
+                ordinary attacks.
+              </p>
+              <div class="crew-grid" style="margin-top: 1.5rem;">
+                <article class="crew-card"
+                  style="--accent: #ff7700; --poster:url('https://i.pinimg.com/1200x/12/d3/b5/12d3b5ed5f7f48ac5672822d164d10af.jpg')">
+                  <div class="crew-copy">
+                    <h3>Mera Mera no Mi</h3>
+                    <p>Logia | Fire Manipulation | Flame-Flame Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>PORTGAS D. ACE / SABO</strong>
+                    <small>Fire Fist Legacy</small>
+                  </div>
+                </article>
+
+                <article class="crew-card"
+                  style="--accent: #f5e340; --poster:url('https://i.pinimg.com/736x/0e/2f/6e/0e2f6ee75b08ff58e2efd01ef58ebc0b.jpg')">
+                  <div class="crew-copy">
+                    <h3>Goro Goro no Mi</h3>
+                    <p>Logia | Lightning Manipulation | Rumble-Rumble Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>ENEL</strong>
+                    <small>God of Skypeia</small>
+                  </div>
+                </article>
+
+                <article class="crew-card"
+                  style="--accent: #00bfff; --pos: center 10%; --size: 100%; --poster:url('https://i.pinimg.com/736x/e8/81/01/e8810153aed2476a3967aba5f41d735d.jpg')">
+                  <div class="crew-copy">
+                    <h3>Hie Hie no Mi</h3>
+                    <p>Logia | Ice Manipulation | Chilly-Chilly Fruit</p>
+                  </div>
+                  <div class="crew-poster">
+                    <span>OWNER</span>
+                    <strong>KUZAN (AOKIJI)</strong>
+                    <small>Former Marine Admiral</small>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="emperors section" id="emperors">
+      <div class="section-heading">
+        <p class="eyebrow">The Great Powers</p>
+        <h2>Four Emperors of the Sea</h2>
+      </div>
+
+      <div class="crew-grid">
+        <article class="crew-card"
+          style="--accent: #ff3838; --pos: center 10%; --size: 105%; --poster:url('https://i.pinimg.com/1200x/5c/38/fc/5c38fcfe181a1da8b511775e30042b33.jpg')">
+          <div class="crew-copy">
+            <h3>Red Hair Shanks</h3>
+            <p>Captain | Red Hair Pirates | Haki Master</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>4,048,900,000</strong>
+            <small>Keeper of the Straw Hat Legacy</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #e8821b; --pos: center center; --size: 100%; --poster:url('https://i.pinimg.com/736x/ae/48/21/ae4821082e01e00bd6d40dceca36c486.jpg')">
+          <div class="crew-copy">
+            <h3>Marshall D. Teach</h3>
+            <p>Admiral | Blackbeard Pirates | Dual Fruits</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>3,996,000,000</strong>
+            <small>Darkness (Logia) & Tremor (Paramecia)</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #00bfff; --pos: center 10%; --size: 110%; --poster:url('https://i.pinimg.com/1200x/56/d0/48/56d048036052e2cf4f2c29efa29275af.jpg')">
+          <div class="crew-copy">
+            <h3>Buggy the Clown</h3>
+            <p>Leader | Cross Guild | Chop-Chop Power</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>3,189,000,000</strong>
+            <small>Legendary Genius Jester</small>
+          </div>
+        </article>
+
+        <article class="crew-card"
+          style="--accent: #c541d4; --pos: center center; --size: 100%; --poster:url('https://i.pinimg.com/736x/c1/ef/c5/c1efc52a0399b7d95535c2b8f6a9f58b.jpg')">
+          <div class="crew-copy">
+            <h3>Monkey D. Luffy</h3>
+            <p>Captain | Straw Hat Pirates | Joy Boy</p>
+          </div>
+          <div class="crew-poster">
+            <span>BOUNTY</span>
+            <strong>3,000,000,000</strong>
+            <small>Awakened Sun God Nika</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="watch section" id="watch">
+      <div class="section-heading">
+        <p class="eyebrow">Next Stop</p>
+        <h2>Set your course for the next arc</h2>
+      </div>
+
+      <div class="watch-panel glass-card">
+        <div>
+          <h3>Watch the journey</h3>
+          <p>
+            Catch the latest episodes, revisit iconic arcs, and prepare for the next dive into the New World.
+          </p>
+        </div>
+        <a class="primary-btn" href="#home">Back to Top</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="#home">One Piece</a>
+      <p>© 2026 Grand Line Showcase. Fan-made concept landing page.</p>
+    </div>
+
+    <div class="socials" aria-label="Social links">
+      <a href="#home" aria-label="Twitter"><span></span></a>
+      <a href="#home" aria-label="Instagram"><span></span></a>
+      <a href="#home" aria-label="YouTube"><span></span></a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.fruit-item').forEach(item => {
+      let timeoutId = null;
+
+      item.addEventListener('mouseenter', () => {
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+          timeoutId = null;
+        }
+        item.open = true;
+        item.classList.remove('is-closing');
+      });
+
+      item.addEventListener('mouseleave', () => {
+        item.classList.add('is-closing');
+        timeoutId = setTimeout(() => {
+          if (item.classList.contains('is-closing')) {
+            item.open = false;
+            item.classList.remove('is-closing');
+          }
+        }, 1000); // Wait for the 400ms CSS height transition to complete
+      });
+    });
+
+    // Mouse-following spotlight glow effect for character and fruit cards
+    document.querySelectorAll('.crew-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      });
+    });
+  </script>
+</body>
+
+</html>
