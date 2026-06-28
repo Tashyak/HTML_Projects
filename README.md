@@ -75,20 +75,20 @@ The purpose of this repository is to:
 
 ```text
 Web-Projects/
-│── Project-1/
+│── One_piece_project/
 │   ├── index.html
 │   ├── style.css
-│   └── assets/
+│  
 │
 │── Project-2/
 │   ├── index.html
 │   ├── style.css
-│   └── assets/
+│  
 │
 │── Project-3/
 │   ├── index.html
 │   ├── style.css
-│   └── assets/
+│  
 │
 └── README.md
 ```
