@@ -55,24 +55,6 @@ OnePieceProject/
 
 ---
 
-## 🚀 Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/Tashyak/<repository-name>.git
-```
-
-Open the project folder:
-
-```bash
-cd <repository-name>
-```
-
-Run the project by opening `index.html` in your preferred web browser.
-
----
-
 ## 🎯 What I Learned
 
 Through this project, I improved my understanding of:
