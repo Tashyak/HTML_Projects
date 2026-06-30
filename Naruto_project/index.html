@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Experience the epic journey of Naruto Uzumaki, from a lonely outcast to the Seventh Hokage. Explore interactive jutsu cards, tailed beast profiles, and the Hokage gallery.">
+    <title>🍥 Naruto Journey | From Outcast to Seventh Hokage</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Global Ambient Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <svg class="leaf-emblem" viewBox="0 0 100 100" width="40" height="40">
+                <path
+                    d="M50 20 C65 20 80 32 80 50 C80 68 65 80 50 80 C35 80 20 68 20 50 C20 40 25 32 32 26 L22 16 L34 16 L40 28 C43 25 46 23 50 20 Z"
+                    fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M50 35 C58 35 65 42 65 50 C65 58 58 65 50 65 C42 65 35 58 35 50 C35 48 37 44 40 41" fill="none"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                <circle cx="28" cy="28" r="3" fill="currentColor" />
+            </svg>
+            <span class="logo-text">SHINOBI<span class="orange-text">WAY</span></span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#timeline" class="nav-link">Journey</a>
+            <a href="#jutsu" class="nav-link">Jutsu</a>
+            <a href="#tailed-beasts" class="nav-link">Beasts</a>
+            <a href="#hokages" class="nav-link">Hokages</a>
+            <a href="#values" class="nav-link">Philosophy</a>
+        </nav>
+        <button class="btn btn-menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-badge reveal-fade-up">
+                <span class="japanese-char">火の意志</span>
+                <span class="badge-text">The Will of Fire</span>
+            </div>
+            <h1 class="hero-title reveal-fade-up">
+                <span class="title-top">NARUTO UZUMAKI</span>
+                <span class="title-bottom">FROM OUTCAST TO <span class="gradient-text">SEVENTH HOKAGE</span></span>
+            </h1>
+            <p class="hero-subtitle reveal-fade-up">
+                Experience the inspiring journey of a ninja who never gave up on his dream.
+            </p>
+            <div class="hero-actions reveal-fade-up">
+                <a href="#timeline" class="btn btn-primary magnetic" id="btn-begin">Begin Journey</a>
+                <a href="#jutsu" class="btn btn-secondary magnetic" id="btn-explore">Explore Shinobi World</a>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <span class="mouse-icon"><span class="wheel"></span></span>
+            <span class="indicator-text">Scroll to Dive In</span>
+        </div>
+    </section>
+
+    <!-- Naruto's Journey Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-subtitle">Chronicles of a Legend</span>
+                <h2 class="section-title">The Path of the Ninja</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="timeline-wrapper">
+                <div class="timeline-progress-line">
+                    <div class="timeline-progress-fill"></div>
+                </div>
+
+                <!-- Milestone 1 -->
+                <div class="timeline-item reveal-slide-left">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Era of Solitude</span>
+                        <h3>Lonely Childhood</h3>
+                        <p>Ostracized by the villagers who feared the Nine-Tailed Fox sealed inside him, Naruto grew up
+                            in isolation. Yet, instead of succumbing to hatred, he vowed to gain the village's
+                            acknowledgment by becoming the Hokage.</p>
+                        <div class="card-bg-gradient orange-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="timeline-item reveal-slide-right">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Formation of Bonds</span>
+                        <h3>Team 7 Formation</h3>
+                        <p>Graduating the academy, Naruto is placed under the guidance of Kakashi Hatake alongside
+                            Sakura Haruno and his lifelong rival, Sasuke Uchiha. Here, he learns the true meaning of
+                            teamwork and comradeship.</p>
+                        <div class="card-bg-gradient blue-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="timeline-item reveal-slide-left">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Testing Limits</span>
+                        <h3>Chunin Exams</h3>
+                        <p>Naruto proves his grit in the dangerous Forest of Death and goes on to defeat the genius Neji
+                            Hyuga in the finals, demonstrating to the entire village his indomitable spirit and
+                            intelligence.</p>
+                        <div class="card-bg-gradient green-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="timeline-item reveal-slide-right">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Chasing a Friend</span>
+                        <h3>Sasuke Retrieval</h3>
+                        <p>When Sasuke defects to Orochimaru in pursuit of power, Naruto leads a retrieval squad. The
+                            final showdown at the Valley of the End breaks his heart but strengthens his resolve to
+                            bring his friend back.</p>
+                        <div class="card-bg-gradient purple-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Milestone 5 -->
+                <div class="timeline-item reveal-slide-left">
+                    <div class="timeline-dot">5</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Inheriting Legacy</span>
+                        <h3>Jiraiya Training</h3>
+                        <p>Naruto spends nearly three years training under Jiraiya, honing his chakra control, learning
+                            how to counter genjutsu, and strengthening his connection to the Nine-Tails' raw energy.</p>
+                        <div class="card-bg-gradient gold-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Milestone 6 -->
+                <div class="timeline-item reveal-slide-right">
+                    <div class="timeline-dot">6</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Hero of the Leaf</span>
+                        <h3>Pain Arc</h3>
+                        <p>Learning Sage Mode after Jiraiya's tragic passing, Naruto fights the leader of Akatsuki,
+                            Pain. Defeating Pain and convincing Nagato to restore the lives lost, Naruto returns as the
+                            celebrated Hero of the Leaf.</p>
+                        <div class="card-bg-gradient orange-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Milestone 7 -->
+                <div class="timeline-item reveal-slide-left">
+                    <div class="timeline-dot">7</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Uniting the World</span>
+                        <h3>Fourth Great Ninja War</h3>
+                        <p>Naruto tames Kurama, achieves Nine-Tails Chakra Mode, and unites all Shinobi. Together with
+                            Sasuke, they seal Kaguya Otsutsuki, ending the cycle of hatred and saving the planet.</p>
+                        <div class="card-bg-gradient gold-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Milestone 8 -->
+                <div class="timeline-item reveal-slide-right">
+                    <div class="timeline-dot">8</div>
+                    <div class="timeline-content">
+                        <span class="milestone-date">Dream Fulfilled</span>
+                        <h3>Becoming Hokage</h3>
+                        <p>Years of struggle and sacrifice culminate in Naruto's inauguration as the Seventh Hokage.
+                            Guarding the Leaf village with the Will of Fire, he leads the shinobi world into an era of
+                            peace.</p>
+                        <div class="card-bg-gradient orange-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ninja Techniques (Jutsu) Section -->
+    <section id="jutsu" class="jutsu-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-subtitle">Shinobi Arsenal</span>
+                <h2 class="section-title">Mastered Jutsu</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="jutsu-grid">
+                <!-- Rasengan -->
+                <div class="jutsu-card reveal-fade-up" data-jutsu="rasengan" data-tilt>
+                    <div class="jutsu-hover-image" style="background-image: url('assets/images/jutsu/rasengan.jpg');"></div>
+                    <div class="jutsu-info">
+                        <div class="jutsu-header">
+                            <span class="jutsu-nature nature-cyan">Chakra Form</span>
+                            <span class="jutsu-rank">A-Rank</span>
+                        </div>
+                        <h3>Rasengan</h3>
+                        <p class="jutsu-user"><strong>User:</strong> Naruto Uzumaki, Jiraiya, Minato Namikaze</p>
+                        <p class="jutsu-desc">A spinning sphere of concentrated chakra formed in the palm of the hand,
+                            requiring precise shape transformation without hand signs.</p>
+                    </div>
+                </div>
+
+                <!-- Rasenshuriken -->
+                <div class="jutsu-card reveal-fade-up" data-jutsu="rasenshuriken" data-tilt>
+                    <div class="jutsu-hover-image" style="background-image: url('assets/images/jutsu/rasenshuriken.jpg');"></div>
+                    <div class="jutsu-info">
+                        <div class="jutsu-header">
+                            <span class="jutsu-nature nature-blue">Wind Style</span>
+                            <span class="jutsu-rank">S-Rank</span>
+                        </div>
+                        <h3>Rasenshuriken</h3>
+                        <p class="jutsu-user"><strong>User:</strong> Naruto Uzumaki</p>
+                        <p class="jutsu-desc">Naruto combines wind-nature chakra with the Rasengan, creating a massive
+                            spinning shuriken that destroys cells with microscopic wind blades.</p>
+                    </div>
+                </div>
+
+
+                <!-- Chidori -->
+                <div class="jutsu-card reveal-fade-up" data-jutsu="chidori" data-tilt>
+                    <div class="jutsu-hover-image" style="background-image: url('assets/images/jutsu/chidori.jpg');"></div>
+                    <div class="jutsu-info">
+                        <div class="jutsu-header">
+                            <span class="jutsu-nature nature-purple">Lightning Style</span>
+                            <span class="jutsu-rank">A-Rank</span>
+                        </div>
+                        <h3>Chidori</h3>
+                        <p class="jutsu-user"><strong>User:</strong> Sasuke Uchiha, Kakashi Hatake</p>
+                        <p class="jutsu-desc">Channels a large amount of lightning chakra into the user's hand, creating
+                            a high-speed piercing thrust that sounds like a thousand chirping birds.</p>
+                    </div>
+                </div>
+
+                <!-- Fire Style: Fireball Jutsu -->
+                <div class="jutsu-card reveal-fade-up" data-jutsu="firestyle" data-tilt>
+                    <div class="jutsu-hover-image" style="background-image: url('assets/images/jutsu/fireball.jpg');"></div>
+                    <div class="jutsu-info">
+                        <div class="jutsu-header">
+                            <span class="jutsu-nature nature-red">Fire Style</span>
+                            <span class="jutsu-rank">C-Rank</span>
+                        </div>
+                        <h3>Fire Style: Great Fireball</h3>
+                        <p class="jutsu-user"><strong>User:</strong> Sasuke Uchiha, Itachi Uchiha</p>
+                        <p class="jutsu-desc">Kneads chakra within the chest and expels it as a massive sphere of flame,
+                            burning everything in its trajectory.</p>
+                    </div>
+                </div>
+
+                <!-- Water Style: Water Dragon Bullet -->
+                <div class="jutsu-card reveal-fade-up" data-jutsu="waterstyle" data-tilt>
+                    <div class="jutsu-hover-image" style="background-image: url('assets/images/jutsu/waterdragon.jpg');"></div>
+                    <div class="jutsu-info">
+                        <div class="jutsu-header">
+                            <span class="jutsu-nature nature-blue">Water Style</span>
+                            <span class="jutsu-rank">B-Rank</span>
+                        </div>
+                        <h3>Water Style: Water Dragon</h3>
+                        <p class="jutsu-user"><strong>User:</strong> Tobirama Senju, Kisame Hoshigaki</p>
+                        <p class="jutsu-desc">Shapes a massive amount of water into a ferocious dragon that crashes down
+                            upon the opponent with crushingly heavy hydraulic force.</p>
+                    </div>
+                </div>
+
+                <!-- Wind Style: Great Breakthrough -->
+                <div class="jutsu-card reveal-fade-up" data-jutsu="windstyle" data-tilt>
+                    <div class="jutsu-hover-image" style="background-image: url('assets/images/jutsu/Breakthrough.jpg');"></div>
+                    <div class="jutsu-info">
+                        <div class="jutsu-header">
+                            <span class="jutsu-nature nature-green">Wind Style</span>
+                            <span class="jutsu-rank">C-Rank</span>
+                        </div>
+                        <h3>Wind Style: Breakthrough</h3>
+                        <p class="jutsu-user"><strong>User:</strong> Orochimaru, Temari</p>
+                        <p class="jutsu-desc">Gathers wind chakra in the lungs and blows it out in a heavy, destructive
+                            gust of wind that levels trees and sweeps away enemies.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tailed Beasts Section -->
+    <section id="tailed-beasts" class="beasts-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-subtitle">Chakra Primordials</span>
+                <h2 class="section-title">The Nine Tailed Beasts</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="beasts-grid">
+                <!-- Shukaku (1) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(210, 180, 140, 0.4)">
+                    <div class="beast-avatar sand-theme">
+                        <img src="assets/images/Beasts/1.jpg" alt="Shukaku" class="beast-img">
+                        <span class="beast-number-roman">I</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Shukaku</h3>
+                        <span class="beast-tails">1 Tail (Ichibi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Gaara</div>
+                            <div><strong>Chakra Nature:</strong> Earth, Wind</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matatabi (2) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(0, 191, 255, 0.4)">
+                    <div class="beast-avatar fire-blue-theme">
+                        <img src="assets/images/Beasts/2.jpg" alt="Matatabi" class="beast-img">
+                        <span class="beast-number-roman">II</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Matatabi</h3>
+                        <span class="beast-tails">2 Tails (Nibi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Yugito Nii</div>
+                            <div><strong>Chakra Nature:</strong> Fire</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Isobu (3) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(72, 209, 204, 0.4)">
+                    <div class="beast-avatar water-green-theme">
+                        <img src="assets/images/Beasts/3.jpg" alt="Isobu" class="beast-img">
+                        <span class="beast-number-roman">III</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Isobu</h3>
+                        <span class="beast-tails">3 Tails (Sanbi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Yagura</div>
+                            <div><strong>Chakra Nature:</strong> Water</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Son Goku (4) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(220, 20, 60, 0.4)">
+                    <div class="beast-avatar lava-theme">
+                        <img src="assets/images/Beasts/4.jpg" alt="Son Goku" class="beast-img">
+                        <span class="beast-number-roman">IV</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Son Goku</h3>
+                        <span class="beast-tails">4 Tails (Yonbi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Roshi</div>
+                            <div><strong>Chakra Nature:</strong> Lava, Earth, Fire</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kokuo (5) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(245, 245, 220, 0.3)">
+                    <div class="beast-avatar steam-theme">
+                        <img src="assets/images/Beasts/5.jpg" alt="Kokuo" class="beast-img">
+                        <span class="beast-number-roman">V</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Kokuo</h3>
+                        <span class="beast-tails">5 Tails (Gobi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Han</div>
+                            <div><strong>Chakra Nature:</strong> Boil, Water, Fire</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saiken (6) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(186, 85, 211, 0.3)">
+                    <div class="beast-avatar bubble-theme">
+                        <img src="assets/images/Beasts/6.jpg" alt="Saiken" class="beast-img">
+                        <span class="beast-number-roman">VI</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Saiken</h3>
+                        <span class="beast-tails">6 Tails (Rokubi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Utakata</div>
+                            <div><strong>Chakra Nature:</strong> Water</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chomei (7) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(144, 238, 144, 0.4)">
+                    <div class="beast-avatar wing-theme">
+                        <img src="assets/images/Beasts/7.jpg" alt="Chomei" class="beast-img">
+                        <span class="beast-number-roman">VII</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Chomei</h3>
+                        <span class="beast-tails">7 Tails (Nanabi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Fu</div>
+                            <div><strong>Chakra Nature:</strong> Wind</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gyuki (8) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(70, 130, 180, 0.4)">
+                    <div class="beast-avatar ink-theme">
+                        <img src="assets/images/Beasts/8.jpg" alt="Gyuki" class="beast-img">
+                        <span class="beast-number-roman">VIII</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Gyuki</h3>
+                        <span class="beast-tails">8 Tails (Hachibi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Killer B</div>
+                            <div><strong>Chakra Nature:</strong> Lightning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kurama (9) -->
+                <div class="beast-card reveal-fade-up" data-tilt data-beast-glow="rgba(255, 122, 0, 0.5)">
+                    <div class="beast-avatar kurama-theme">
+                        <img src="assets/images/Beasts/9.jpg" alt="Kurama" class="beast-img">
+                        <span class="beast-number-roman">IX</span>
+                    </div>
+                    <div class="beast-content">
+                        <h3>Kurama</h3>
+                        <span class="beast-tails">9 Tails (Kyubi)</span>
+                        <div class="beast-stats">
+                            <div><strong>Jinchuriki:</strong> Naruto Uzumaki</div>
+                            <div><strong>Chakra Nature:</strong> Fire, Wind</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hokages Gallery Section -->
+    <section id="hokages" class="hokages-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-subtitle">Leaders of the Leaf</span>
+                <h2 class="section-title">The Seven Hokages</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="hokages-grid">
+                <!-- Hashirama -->
+                <div class="hokage-card reveal-fade-up" data-tilt>
+                    <div class="hokage-portrait wood-style">
+                        <img src="assets/images/Hokages/Hashirama_senju.jpg" alt="Hashirama Senju" class="hokage-img">
+                        <div class="portrait-gradient"></div>
+                        <span class="hokage-rank-num">First</span>
+                    </div>
+                    <div class="hokage-info">
+                        <h3>Hashirama Senju</h3>
+                        <span class="hokage-ability"><strong>Signature:</strong> Wood Style (Mokuton)</span>
+                        <p class="hokage-desc">Co-founded Konohagakure along with Madara Uchiha. Renowned as the "God of
+                            Shinobi", his DNA and healing cells became legendary.</p>
+                    </div>
+                </div>
+
+                <!-- Tobirama -->
+                <div class="hokage-card reveal-fade-up" data-tilt>
+                    <div class="hokage-portrait water-style">
+                        <img src="assets/images/Hokages/tobirama_senju.jpg" alt="Tobirama Senju" class="hokage-img">
+                        <div class="portrait-gradient"></div>
+                        <span class="hokage-rank-num">Second</span>
+                    </div>
+                    <div class="hokage-info">
+                        <h3>Tobirama Senju</h3>
+                        <span class="hokage-ability"><strong>Signature:</strong> Water Dragon / Flying Raijin</span>
+                        <p class="hokage-desc">A tactical genius who created the Academy, Anbu, and Chunin Exams.
+                            Invented the Flying Raijin, Shadow Clone, and Reanimation jutsu.</p>
+                    </div>
+                </div>
+
+                <!-- Hiruzen -->
+                <div class="hokage-card reveal-fade-up" data-tilt>
+                    <div class="hokage-portrait earth-style">
+                        <img src="assets/images/Hokages/Hiruzen_sarutobi.jpg" alt="Hiruzen Sarutobi" class="hokage-img">
+                        <div class="portrait-gradient"></div>
+                        <span class="hokage-rank-num">Third</span>
+                    </div>
+                    <div class="hokage-info">
+                        <h3>Hiruzen Sarutobi</h3>
+                        <span class="hokage-ability"><strong>Signature:</strong> Five Elements Mastery</span>
+                        <p class="hokage-desc">Nicknamed "The Professor" for mastering all non-kekkei-genkai jutsu in
+                            Konoha. He nurtured the Will of Fire in generations of ninjas.</p>
+                    </div>
+                </div>
+
+                <!-- Minato -->
+                <div class="hokage-card reveal-fade-up" data-tilt>
+                    <div class="hokage-portrait lightning-style">
+                        <img src="assets/images/Hokages/Minato_namikaze.jpg" alt="Minato Namikaze" class="hokage-img">
+                        <div class="portrait-gradient"></div>
+                        <span class="hokage-rank-num">Fourth</span>
+                    </div>
+                    <div class="hokage-info">
+                        <h3>Minato Namikaze</h3>
+                        <span class="hokage-ability"><strong>Signature:</strong> Flying Raijin / Rasengan</span>
+                        <p class="hokage-desc">Known as the "Yellow Flash". He developed the Rasengan and sacrificed his
+                            life to seal the Nine-Tails, saving the leaf village.</p>
+                    </div>
+                </div>
+
+                <!-- Tsunade -->
+                <div class="hokage-card reveal-fade-up" data-tilt>
+                    <div class="hokage-portrait heal-style">
+                        <img src="assets/images/Hokages/Tsunade_senju.jpg" alt="Tsunade" class="hokage-img">
+                        <div class="portrait-gradient"></div>
+                        <span class="hokage-rank-num">Fifth</span>
+                    </div>
+                    <div class="hokage-info">
+                        <h3>Tsunade</h3>
+                        <span class="hokage-ability"><strong>Signature:</strong> Strength of a Hundred Seal</span>
+                        <p class="hokage-desc">Granddaughter of Hashirama. The world's greatest medical-nin, she brought
+                            hope and recovery back to the village after crisis.</p>
+                    </div>
+                </div>
+
+                <!-- Kakashi -->
+                <div class="hokage-card reveal-fade-up" data-tilt>
+                    <div class="hokage-portrait copy-style">
+                        <img src="assets/images/Hokages/kakashi_hatake.jpg" alt="Kakashi Hatake" class="hokage-img">
+                        <div class="portrait-gradient"></div>
+                        <span class="hokage-rank-num">Sixth</span>
+                    </div>
+                    <div class="hokage-info">
+                        <h3>Kakashi Hatake</h3>
+                        <span class="hokage-ability"><strong>Signature:</strong> Raikiri / Purple Lightning</span>
+                        <p class="hokage-desc">The famed "Copy Ninja" who copied over a thousand jutsu. Guided Team 7
+                            and ruled in the reconstruction era after the war.</p>
+                    </div>
+                </div>
+
+                <!-- Naruto -->
+                <div class="hokage-card reveal-fade-up" data-tilt>
+                    <div class="hokage-portrait hokage-orange-style">
+                        <img src="assets/images/Hokages/Naruto.jpg" alt="Naruto Uzumaki" class="hokage-img">
+                        <div class="portrait-gradient"></div>
+                        <span class="hokage-rank-num">Seventh</span>
+                    </div>
+                    <div class="hokage-info">
+                        <h3>Naruto Uzumaki</h3>
+                        <span class="hokage-ability"><strong>Signature:</strong> Six Paths Sage Mode</span>
+                        <p class="hokage-desc">The child of prophecy who united all Tailed Beasts, saved the Shinobi
+                            world, and achieved his lifelong dream of leading the Leaf.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shinobi Values Section -->
+    <section id="values" class="values-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-subtitle">Way of the Ninja</span>
+                <h2 class="section-title">Shinobi Creed</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="values-grid">
+                <!-- Card 1 -->
+                <div class="value-card reveal-fade-up">
+                    <div class="value-icon">🔥</div>
+                    <h3>Never Give Up</h3>
+                    <p>No matter the odds, a true ninja pushes forward. Giving up is not an option; it's a decision to
+                        stand still while the dream slips away.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="value-card reveal-fade-up">
+                    <div class="value-icon">🤝</div>
+                    <h3>Friendship</h3>
+                    <p>"Those who break the rules are scum, but those who abandon their friends are worse than scum."
+                        Bonds are the source of true strength.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="value-card reveal-fade-up">
+                    <div class="value-icon">💪</div>
+                    <h3>Hard Work</h3>
+                    <p>Genius is nothing without effort. Hard work beats natural talent when talent fails to work hard,
+                        as shown by Rock Lee and Naruto.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="value-card reveal-fade-up">
+                    <div class="value-icon">🛡️</div>
+                    <h3>Protect Your Village</h3>
+                    <p>To shield the innocent and guard the home that nurtured you, offering your life for the peace of
+                        future generations.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="value-card reveal-fade-up">
+                    <div class="value-icon">✨</div>
+                    <h3>Believe It!</h3>
+                    <p>A declaration of absolute belief in one's path. Speak your dream into existence and let every
+                        action prove it true.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="value-card reveal-fade-up">
+                    <div class="value-icon">🍃</div>
+                    <h3>Will of Fire</h3>
+                    <p>The spiritual belief that love, unity, and protection of the village are the keys to peace. It is
+                        passed down to every generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-container">
+            <h2 class="cta-title reveal-fade-up">Believe It!</h2>
+            <p class="cta-subtitle reveal-fade-up">The journey of a true ninja never truly ends.</p>
+            <div class="reveal-fade-up">
+                <button class="btn btn-primary magnetic" id="btn-explore-again">Explore Again</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Naruto Journey. Created with the Will of Fire.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Code -->
+    <script src="script.js"></script>
+</body>
+
+</html>
