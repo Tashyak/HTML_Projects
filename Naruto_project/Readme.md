@@ -75,7 +75,6 @@ Includes techniques such as:
 
 * Rasengan
 * Rasenshuriken
-* Shadow Clone Jutsu
 * Chidori
 * Fire Style
 * Water Style
