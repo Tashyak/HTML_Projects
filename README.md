@@ -95,22 +95,6 @@ Web-Projects/
 
 ---
 
-## 🚀 Getting Started
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/Tashyak/<repository-name>.git
-```
-
-2. Open the repository folder.
-
-3. Navigate to any project directory.
-
-4. Open the `index.html` file in your browser to view the project.
-
----
-
 ## 📈 Future Plans
 
 * Build more responsive websites
